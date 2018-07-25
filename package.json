@@ -1,0 +1,26 @@
+{
+  "name": "cep-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "neutrino build",
+    "lint": "neutrino lint",
+    "test": "neutrino test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@neutrinojs/jest": "^8.3.0",
+    "@neutrinojs/library": "^8.3.0",
+    "@neutrinojs/standardjs": "^8.3.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "neutrino": "^8.3.0"
+  },
+  "dependencies": {
+    "@cep/csinterface": "^8.0.1",
+    "color-convert": "^1.9.2"
+  }
+}
