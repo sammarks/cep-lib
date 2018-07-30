@@ -2,7 +2,10 @@
   "name": "cep-lib",
   "version": "1.0.0",
   "description": "JS wrapper functions to aid in the development of CEP plugins.",
-  "main": "index.js",
+  "main": "build/index.js",
+  "files": [
+    "build/*"
+  ],
   "scripts": {
     "build": "neutrino build",
     "lint": "neutrino lint",

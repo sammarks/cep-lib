@@ -1,4 +1,11 @@
 module.exports = {
+  options: {
+    mains: {
+      index: 'index',
+      cep: 'cep',
+      csinterface: 'csinterface/index'
+    },
+  },
   use: [
     '@neutrinojs/standardjs',
     [
