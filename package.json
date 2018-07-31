@@ -2,9 +2,11 @@
   "name": "cep-lib",
   "version": "0.0.1",
   "description": "JS wrapper functions to aid in the development of CEP plugins.",
-  "main": "build/index.js",
+  "main": "index.js",
   "files": [
-    "build/*"
+    "index.js",
+    "cep.js",
+    "csinterface.js"
   ],
   "scripts": {
     "release": "standard-version -r",

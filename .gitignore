@@ -1,5 +1,7 @@
 .idea
-build
+/cep.js**
+/index.js**
+/csinterface.js**
 
 ### Node template
 # Logs

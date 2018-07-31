@@ -1,5 +1,6 @@
 module.exports = {
   options: {
+    output: '.',
     mains: {
       index: 'index',
       cep: 'cep',
