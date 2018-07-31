@@ -15,19 +15,20 @@ npm install --save cep-lib
 ```
 
 ```js
-import csInterface from 'cep-lib/csinterface'
-import cep from 'cep-lib/cep'
+import { evalScript, getCSInterface } from 'cep-lib/csinterface'
+import { deleteFile } from 'cep-lib/cep'
 
-const result = csInterface.evalScript('extendScriptFunction()')
+const result = evalScript('extendScriptFunction()')
 console.log(result)
 
-const rawCSInterface = csInterface.getCSInterface()
+const rawCSInterface = getCSInterface()
 
-cep.deleteFile('/tmp/foo')
+deleteFile('/tmp/foo')
 ```
 
 **Note:** It is not recommended to import the `cep-lib` root. If you do so, you will receive a warning message.
-Each library has been packaged separately in order to allow developers to only import what they need.
+Each library has been packaged separately in order to allow developers to only import what they need. Also
+note that the libraries do not have default exports.
 
 ## Features
 
