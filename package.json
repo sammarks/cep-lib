@@ -1,6 +1,6 @@
 {
   "name": "cep-lib",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "JS wrapper functions to aid in the development of CEP plugins.",
   "main": "build/index.js",
   "files": [
@@ -12,7 +12,18 @@
     "lint": "neutrino lint",
     "test": "neutrino test"
   },
-  "keywords": [],
+  "keywords": [
+    "cep",
+    "adobe-cep-extension",
+    "extendscript",
+    "adobe",
+    "extendscript-extensions",
+    "adobe plugins",
+    "after effects",
+    "premiere pro",
+    "photoshop",
+    "indesign"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
