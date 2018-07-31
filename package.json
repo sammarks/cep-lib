@@ -1,12 +1,13 @@
 {
   "name": "cep-lib",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "JS wrapper functions to aid in the development of CEP plugins.",
   "main": "build/index.js",
   "files": [
     "build/*"
   ],
   "scripts": {
+    "release": "standard-version -r",
     "build": "neutrino build",
     "lint": "neutrino lint",
     "test": "neutrino test"
@@ -20,7 +21,9 @@
     "@neutrinojs/standardjs": "^8.3.0",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
-    "neutrino": "^8.3.0"
+    "jest-junit": "^5.1.0",
+    "neutrino": "^8.3.0",
+    "standard-version": "^4.4.0"
   },
   "dependencies": {
     "@cep/csinterface": "^8.0.1",
