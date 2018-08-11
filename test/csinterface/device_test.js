@@ -1,6 +1,7 @@
 import { expect } from '../setup'
 import { getCSInterface } from '../../src/csinterface/csinterface'
 import * as device from '../../src/csinterface/device'
+import { SystemPath } from '@cep/csinterface'
 
 jest.mock('../../src/csinterface/csinterface')
 
@@ -77,6 +78,29 @@ describe('#getDeviceInformation()', () => {
       expect(device.getDeviceInformation()).to.deep.equal({
         csInterfaceError: 'no csinterface found'
       })
+    })
+  })
+})
+
+describe('#getExtensionDirectory', () => {
+  describe('csinterface is present', () => {
+    let getSystemPath = null
+    beforeEach(() => {
+      getSystemPath = jest.fn()
+      getCSInterface.mockReturnValueOnce({
+        getSystemPath
+      })
+    })
+    it('returns the result from getSystemPath', () => {
+      getSystemPath.mockReturnValueOnce('/foo/bar')
+      expect(device.getExtensionDirectory()).to.equal('/foo/bar')
+      expect(getSystemPath.mock.calls[0]).to.deep.equal([SystemPath.EXTENSION])
+    })
+  })
+  describe('csinterface is not present', () => {
+    it('returns null', () => {
+      getCSInterface.mockReturnValueOnce(null)
+      expect(device.getExtensionDirectory()).to.equal(null)
     })
   })
 })

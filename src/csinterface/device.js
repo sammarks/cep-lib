@@ -1,4 +1,5 @@
 import { getCSInterface } from './csinterface'
+import { SystemPath } from '@cep/csinterface'
 
 export const getDeviceInformation = () => {
   const csInterface = getCSInterface()
@@ -12,5 +13,14 @@ export const getDeviceInformation = () => {
     }
   } else {
     return { csInterfaceError: 'no csinterface found' }
+  }
+}
+
+export const getExtensionDirectory = () => {
+  const csInterface = getCSInterface()
+  if (csInterface) {
+    return csInterface.getSystemPath(SystemPath.EXTENSION)
+  } else {
+    return null
   }
 }
