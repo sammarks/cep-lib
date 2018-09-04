@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.5"></a>
+## [0.0.5](https://github.com/sammarks/cep-lib/compare/v0.0.4...v0.0.5) (2018-09-04)
+
+
+### Bug Fixes
+
+* Support old browsers. ([cd02894](https://github.com/sammarks/cep-lib/commit/cd02894))
+
+
+
 <a name="0.0.4"></a>
 ## [0.0.4](https://github.com/sammarks/cep-lib/compare/v0.0.3...v0.0.4) (2018-08-12)
 
