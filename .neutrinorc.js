@@ -12,7 +12,16 @@ module.exports = {
     [
       '@neutrinojs/library',
       {
-        name: 'cep-lib'
+        name: 'cep-lib',
+        babel: {
+          presets: [
+            ['babel-preset-env', {
+              targets: {
+                browsers: ['chrome 27']
+              }
+            }]
+          ]
+        }
       }
     ],
     [
