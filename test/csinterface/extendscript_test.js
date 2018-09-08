@@ -26,5 +26,13 @@ describe('#evalScript()', () => {
       evalScript.mockImplementationOnce((script, callback) => callback('foo'))
       return expect(extendscript.evalScript('foo')).to.eventually.equal('foo')
     })
+    it('runs the script and returns undefined results', async () => {
+      evalScript.mockImplementationOnce((script, callback) => callback('undefined'))
+      return expect(extendscript.evalScript('foo')).to.eventually.equal(undefined)
+    })
+    it('runs the script and returns null results', async () => {
+      evalScript.mockImplementationOnce((script, callback) => callback('null'))
+      return expect(extendscript.evalScript('foo')).to.eventually.equal(null)
+    })
   })
 })

@@ -6,7 +6,13 @@ export const evalScript = async (script) => {
     if (csInterface.evalScript) {
       csInterface.evalScript(script, (result) => {
         try {
-          resolve(JSON.parse(result))
+          if (result === 'undefined') {
+            resolve(undefined)
+          } else if (result === 'null') {
+            resolve(null)
+          } else {
+            resolve(JSON.parse(result))
+          }
         } catch (e) {
           resolve(result)
         }
