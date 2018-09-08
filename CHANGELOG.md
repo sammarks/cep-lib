@@ -11,17 +11,6 @@ All notable changes to this project will be documented in this file. See [standa
 * Make sure evalScript returns undefined and null results properly. ([0310543](https://github.com/sammarks/cep-lib/commit/0310543))
 
 
-
-<a name=""></a>
-# [](https://github.com/sammarks/cep-lib/compare/v0.0.5...v) (2018-09-08)
-
-
-### Bug Fixes
-
-* Make sure evalScript returns undefined and null results properly. ([0310543](https://github.com/sammarks/cep-lib/commit/0310543))
-
-
-
 <a name="0.0.5"></a>
 ## [0.0.5](https://github.com/sammarks/cep-lib/compare/v0.0.4...v0.0.5) (2018-09-04)
 
