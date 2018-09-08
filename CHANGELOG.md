@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.6"></a>
+## [0.0.6](https://github.com/sammarks/cep-lib/compare/v0.0.5...v0.0.6) (2018-09-08)
+
+
+### Bug Fixes
+
+* Make sure evalScript returns undefined and null results properly. ([0310543](https://github.com/sammarks/cep-lib/commit/0310543))
+
+
+
 <a name=""></a>
 # [](https://github.com/sammarks/cep-lib/compare/v0.0.5...v) (2018-09-08)
 

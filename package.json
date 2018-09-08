@@ -1,6 +1,6 @@
 {
   "name": "cep-lib",
-  "version": null,
+  "version": "0.0.6",
   "description": "JS wrapper functions to aid in the development of CEP plugins.",
   "main": "index.js",
   "files": [
