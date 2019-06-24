@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/sammarks/cep-lib/compare/v0.0.6...v0.1.0) (2019-06-24)
+
+
+### Features
+
+* add chooseFiles helper ([6537ad9](https://github.com/sammarks/cep-lib/commit/6537ad9))
+
+
+
 <a name="0.0.6"></a>
 ## [0.0.6](https://github.com/sammarks/cep-lib/compare/v0.0.5...v0.0.6) (2018-09-08)
 
