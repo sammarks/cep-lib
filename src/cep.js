@@ -17,3 +17,9 @@ export const deleteFile = (path) => {
   }
   return true
 }
+
+export const chooseFiles = () => {
+  if (!checkCEP()) return null
+  const result = window.cep.fs.showOpenDialog()
+  return result.data
+}
