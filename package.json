@@ -36,7 +36,7 @@
     "chai-as-promised": "^7.1.1",
     "jest-junit": "^5.1.0",
     "neutrino": "^8.3.0",
-    "standard-version": "^4.4.0"
+    "standard-version": "^8.0.1"
   },
   "dependencies": {
     "@cep/csinterface": "^8.0.1",
